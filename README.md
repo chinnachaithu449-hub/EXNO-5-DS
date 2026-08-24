@@ -32,6 +32,99 @@ plt.show()
 ~~~
 <img width="816" height="537" alt="Screenshot 2026-08-24 162004" src="https://github.com/user-attachments/assets/90d1ac3d-5bd7-4f99-a08b-6d7cfdf912e9" />
 
+~~~
+student=['A','B','C','D']
+attendence=[90,85,73,88]
+plt.plot(attendence,student)
+plt.xlabel('Attendence')
+plt.ylabel('Student name')
+plt.show()
+~~~
+<img width="556" height="432" alt="download" src="https://github.com/user-attachments/assets/f85f0dab-8643-4a0e-ae52-e5226f396e18" />
+
+~~~
+x=[10,20,30,40,50]
+y=[100,200,300,400,500]
+plt.scatter(x,y,label='stars',color='green',marker='*',s=30)
+plt.show()
+~~~
+<img width="552" height="413" alt="download" src="https://github.com/user-attachments/assets/5769b661-e3d4-4c73-8338-ac7c6f70b6db" />
+
+~~~
+x=np.arange(0,15)
+y=np.arange(0,15)
+x
+y
+plt.scatter(x,y,c='r')
+plt.xlabel('X axis')
+plt.ylabel('y axis')
+plt.title('Scatter plot')
+plt.show()
+~~~
+<img width="563" height="453" alt="download" src="https://github.com/user-attachments/assets/b72829c4-b7dc-48f6-b2f8-1cfb2d948bf5" />
+
+~~~
+act=['eat','sleep','work','play']
+slices=[3,7,8,6]
+color=['r','y','g','b']
+plt.pie(slices,labels=act,colors=color,startangle=90,shadow=True,explode=(0.1,0.1,0.1,0.1),radius=1.2,autopct='%1.1f%%')
+plt.legend()
+plt.show()
+~~~
+<img width="452" height="415" alt="download" src="https://github.com/user-attachments/assets/93fc9039-71f7-42a4-a9e1-bed7504e4afb" />
+
+~~~
+x = [1, 2, 3, 4, 5]
+y1 = [10, 12, 14, 16, 18]
+y2 = [5, 7, 9, 11, 13]
+y3 = [2, 4, 6, 8, 10]
+plt.fill_between(x, y1, color='blue')
+plt.fill_between(x, y2, color='green')
+plt.plot(x, y1, color='red')
+plt.plot(x, y2, color='black')
+plt.legend(['y1','y2'])
+plt.show()
+~~~
+<img width="556" height="413" alt="download" src="https://github.com/user-attachments/assets/d2cd48fe-b9ab-479f-b55e-ca4153805ea4" />
+
+~~~
+height = [10, 24, 36, 40, 5]
+names = ['one', 'two', 'three', 'four', 'five']
+c1=['red', 'green']
+c2=['b', 'g']
+plt.bar (names, height, width=0.8, color=c1)
+plt.xlabel('x - axis')
+plt.ylabel('y - axis')
+plt.title('My bar chart!') 
+plt.show()
+~~~
+<img width="563" height="453" alt="download" src="https://github.com/user-attachments/assets/a41dcbdc-5363-462e-816d-8d4f4fbba741" />
+
+~~~
+x = [2,1,6,4,2,4,8,9,4,2,4,10,6,4,5,7,7,3,2,7,5,3,5,9,2,1]
+plt.hist(x, bins = 10, color='blue', alpha=0.5)
+plt.show()
+~~~
+<img width="534" height="413" alt="download" src="https://github.com/user-attachments/assets/6eb95fc5-c888-44b2-9239-49cf7a87d7bb" />
+
+~~~
+np.random.seed(0)
+data=np.random.normal(loc=0, scale=1, size=100)
+data
+fig, ax= plt.subplots()
+ax.boxplot(data)
+ax.set_xlabel('Data')
+ax.set_ylabel('Values')
+ax.set_title('Box Plot')
+~~~
+<img width="565" height="453" alt="download" src="https://github.com/user-attachments/assets/b7ae0bdb-217a-4919-b884-8dea82921c48" />
+
+
+
+
+
+
+
 
 
 
